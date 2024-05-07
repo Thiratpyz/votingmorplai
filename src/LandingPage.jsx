@@ -31,7 +31,7 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div className="text-container">
+      <div className="text-container py-10">
         <div className="flex flex-col items-center space-y-5">
           <div className='whitespace-pre pt-5'>
             <h1 className="text">Popular Student 
