@@ -42,7 +42,7 @@ const LandingPage = () => {
           </div>
           <div className='content-center' id='button'>
             {/* Attach onClick event handler */}
-            <button onClick={handleStartVoting} className='px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg'> Start Voting!</button>
+            <button onClick={handleStartVoting} className='px-8 py-8 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg'> Start Voting!</button>
           </div>
         </div>      
       </div>
