@@ -12,24 +12,23 @@
 }
 
 .logo-container {
-  margin: auto;
-  position: fixed;
-  top: 30%;
-  transition: transform 1s ease-out, top 1s ease, left 0.5s ease;
+  top: 15%;
+  opacity: 0;
+  transform: scale(1);
+  transition: transform 1s ease-out, top 1s ease, left 0.5s ease, opacity 0.5s ease-out;
 }
 
 .text-container {
   position: absolute;
-  top: calc(100% - 50%);
   left: 50%;
   transform: translate(-50%, 0);
   opacity: 0;
-  transition: opacity 0.5s ease 1.5s;
+  transition: opacity 0.5s ease 1.2s;
 }
 
 .text {
   margin: 0;
-  font-size: 30px;
+  font-size: 40px;
   font-family: 'Prompt', sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -38,14 +37,15 @@
 
 
 /* Ipad- Screen */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 768px) {
   .container {
     flex-direction: column;
     padding: 10px;
   }
 
   .logo-container {
-    top: calc(50% - 115px);
+    padding-top: 40px;
+    scale: 1.2;
   }
 
   .text-container {
@@ -54,7 +54,7 @@
   }
 
   .text {
-    font-size: 40px;
+    font-size: 55px;
   }
 }
 
@@ -66,7 +66,7 @@
   }
 
   .logo-container {
-    top: calc(50% - 115px);
+    padding-top: 50px;
   }
 
   .text-container {
@@ -75,7 +75,7 @@
   }
 
   .text {
-    font-size: 26px;
+    font-size: 35px;
   }
 }
 @media (max-width: 380px) {
@@ -85,7 +85,7 @@
   }
 
   .logo-container {
-    top: calc(50% - 115px);
+    padding-top: 50px;
   }
 
   .text-container {
@@ -94,6 +94,24 @@
   }
 
   .text {
-    font-size: 24px;
+    font-size: 30px;
+  }
+}
+@media (max-width: 350px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .logo-container {
+    padding-top: 130px;
+  }
+
+  .text-container {
+    transform: translate(-50%, 0);
+  }
+
+  .text {
+    font-size: 30px;
   }
 }
