@@ -44,7 +44,7 @@ const LandingPage = () => {
             <script>document.getElementById("test").innerHTML = data</script>
           </div>
           <div className='content-center' id='button'>
-            <button onClick={handleStartVoting} className='px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg text-2xl'>
+            <button onClick={handleStartVoting} className='px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg text-xl'>
               Start Voting!
             </button>
           </div>
