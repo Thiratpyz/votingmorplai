@@ -24,7 +24,7 @@ const NextPage = () => {
   
       // Check Token validity
       try {
-        const response = await axios.get(`https://sheetdb.io/api/v1/os9cv595lvvrg/search?token=${input_token}&single_object=true`);
+        const response = await axios.get(`https://sheetdb.io/api/v1/169b7n9a5qenf/search?token=${input_token}&single_object=true`);
         const token_id = response.data.token;
         const token_usage = response.data.usage;
         
@@ -36,7 +36,7 @@ const NextPage = () => {
           console.log(`Token id is ${token_id}, input token is ${input_token}`);
 
           // update data from POST
-          fetch(`https://sheetdb.io/api/v1/os9cv595lvvrg/token/${input_token}`, {
+          fetch(`https://sheetdb.io/api/v1/169b7n9a5qenf/token/${input_token}`, {
             method: 'PATCH',
             headers: {
                 'Accept': 'application/json',
@@ -71,7 +71,7 @@ const NextPage = () => {
         <div class='px-5 pt-5'>
           <div className="px-10 py-5 border rounded-2xl overflow-hidden">
             <h1 className="font-Prompt text-center justify-center item-center text-2xl font-bold mb-4 whitespace">ขวัญใจชาวค่าย<br></br>
-            ระดับ ม.1
+            ระดับ ม.4
             </h1>
               <form method="post" onSubmit={handleSubmit}>
                 <div id='' className="mb-6">
